@@ -12,7 +12,8 @@ export default function MyLink({
   return (
     <Link
       className="hover:scale-105 transition-all"
-      href={`${external ? "" : "/"}${link}`}
+      href={`${external ? "" : "./"}${link}`}
+      as={`${external ? "" : "./"}${link}`}
     >
       {text ?? capitalise(link)}
     </Link>
